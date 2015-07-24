@@ -42,12 +42,6 @@
 
 			{{zone('main')|raw}}
 
-			<footer class="template-footer--line">
-
-				{{widget('line', 'footerline', {})|raw}}
-
-			</footer>
-
 		</div>
 
 	</section>
@@ -57,19 +51,17 @@
 
 		<div class="container">
 
-			{{widget('logo', 'footerlogo', {
-				"defaultlogo": asset('images/logodark.png')
-			})|raw}}
-
-			<div class="profile-content">
+			<div class="profile-content  left">
 				{{widget('profile', 'footerprofile1', {
-					"profileType":"strapline",
-					"strapline":"profile"
-				})|raw}}
-
-				{{widget('profile', 'footerprofile2', {
 					"profileType":"copyright",
 					"copyright":"profile"
+				})|raw}}
+			</div>
+
+			<div class="profile-content  right">
+				{{widget('profile', 'footerprofile2', {
+					"profileType":"socialicons",
+					"socialicons":"profile"
 				})|raw}}
 			</div>
 

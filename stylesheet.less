@@ -245,6 +245,15 @@ textarea {
 }
 
 .template-footer {
+	background: @color-swatch5;
+	color: @color-swatch1;
+	h2, .heading--2, a, p {
+		color: @color-swatch1;
+	}
+	.social-link:hover {
+		background: none;
+		border-color: @color-swatch1;
+	}
 	.container {
 		display: -webkit-box;
 		display: -moz-box;
@@ -277,6 +286,9 @@ textarea {
 	flex: 1 1 auto;
 	.widget {
 		margin-bottom: 5px;
+	}
+	&.right {
+		text-align: right;
 	}
 }
 
