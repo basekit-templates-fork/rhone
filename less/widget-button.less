@@ -13,9 +13,8 @@ select.select {
 	position: relative;
 	transition: .2s;
 	-webkit-font-smoothing: antialiased;
-	padding-right: 5em;
-	&:before,
-	&:after {
+	padding-right: 3em;
+	&:before {
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -24,34 +23,22 @@ select.select {
 		padding-right: 1rem;
 		margin: 0;
 		font-size: 1.2rem;
-		line-height: inherit;
-	}
-	&:before {
+		line-height: 1.55rem;
 		transition: .2s;
 		font-family: 'FontAwesome', sans-serif;
 		z-index: 1;
 		-webkit-transform-origin: center center;
 	}
-	&:after {
-		background-color: @font-swatch7-background-color-hover;
-		content: "\00a0\00a0\00a0";
-	}
 	&:hover:before {
-		-webkit-transform: scale(1.4);
+		-webkit-transform: scale(1.3);
 		-webkit-transform-origin: center center;
-	}
-	&.added {
-		&:after {
-			background-color: darken(green,10%);
-		}
 	}
 }
 
 
 // Columns editor controls fix
 #select-columns-num button {
-	&:before,
-	&:after {
+	&:before {
 		display: none;
 	}
 }
@@ -60,15 +47,9 @@ select.select {
 button.buttonwidget__button,
 .button.button--primary,
 .button.button--next {
-	&:before,
-	&:after {
+	&:before {
 		font-size: 2rem;
 		padding: .6rem 1rem;
-	}
-	&:after {
-		content: "\00a0\00a0";
-	}
-	&:before {
 		content: "\F105";
 		text-indent: -.4rem;
 	}
@@ -87,8 +68,7 @@ button.buttonwidget__button,
 // Click to call widget and Phone number widget
 .phone-number-link {
 	.button;
-	&:before,
-	&:after {
+	&:before {
 		font-size: 1.35rem;
 		padding-right: 1rem;
 	}
@@ -106,13 +86,10 @@ button.buttonwidget__button,
 // Sign up and contact form widget buttons
 button.signupform__button,
 button.contactform__button {
-	&:before,
-	&:after {
+	&:before {
 		font-size: 1rem;
 		transition: .2s;
 		padding-right: 1.2rem;
-	}
-	&:before {
 		content: "\f0e0";
 	}
 	&:hover:before {
@@ -179,8 +156,7 @@ span.remove-text {
 }
 
 .button.item-remove {
-	&:before,
-	&:after {
+	&:before {
 		padding: 0.6rem 0.55rem;
 		font-size: 1rem;
 	}
@@ -234,26 +210,18 @@ select.select {
 	&:hover {
 		background-color: @font-swatch7-background-color-hover;
 	}
-	&:before,
-	&:after {
+	&:before{
 		position: absolute;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		padding: .6rem 1rem;
 		color: inherit;
-	}
-	&:before {
 		transition: .2s;
 		z-index: 1;
 		font-size: 1.9rem;
 		font-family: 'FontAwesome', sans-serif;
 		content: "\f107";
-	}
-	&:after {
-		background-color: @font-swatch7-background-color-hover;
-		font-size: 2rem;
-		content: "\00a0\00a0";
 	}
 	&:hover:before {
 		-webkit-animation: bouncedown .4s alternate ease infinite;
@@ -341,9 +309,6 @@ select.select {
 		text-indent: -.25rem;
 		padding: .6rem 1rem;
 	}
-	&:after {
-		display: none;
-	}
 }
 
 .button.button--quantity {
@@ -402,7 +367,7 @@ table {
 
 .dropbox__label {
 	display: inline-block;
-	padding: .8em 1.4em .8em 0;
+	padding: .8em 1.4em .8em;
 	background-color: @font-swatch7-background-color-hover;
 	font-size: @font-swatch7-font-size;
 	-webkit-font-smoothing: antialiased;
@@ -415,8 +380,7 @@ table {
 .button.button--previous {
 	padding-left: 5em;
 	padding-right: 1.4em;
-	&:before,
-	&:after {
+	&:before {
 		right: auto;
 		left: 0;
 		font-size: 2rem;
