@@ -73,7 +73,7 @@
         }
     },
     "fontSwatch": {
-       "title": "Roboto Condensed / Lato",
+       "title": "Open Sans Condensed / Lato",
         "font1": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "28px",
@@ -115,7 +115,7 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Roboto Condensed\", Geneva, \"Lucida Console\", sans-serif",
+            "font-family": "\"Open Sans Condensed\", Arial, Helvetica, sans-serif",
             "font-size": "12px",
             "font-weight": "400",
             "line-height": "20px",

@@ -57,6 +57,9 @@ button.buttonwidget__button,
 		-webkit-animation: bounceright .4s alternate ease infinite;
 		-webkit-transform: inherit;
 	}
+	&:after {
+		display: none;
+	}
 }
 
 @-webkit-keyframes bounceright {
@@ -348,11 +351,18 @@ table {
 	}
 }
 
-
-// Feature
-.feature__content-wrap {
-	text-shadow: 0 0 60px rgba(0,0,0,0.5); // Hard coded transparent black so text is easier to read on all backgrounds
+// Feature button
+.button.feature__button {
+	background: none;
+	color: @color-swatch2;
+	padding: 0 1.5em 0 0;
+	&:before {
+		padding: 0;
+		font-size: 1em;
+		content: "\f178";
+	}
 }
+
 
 // Nav button
 .navigation-toggle:after {
@@ -378,7 +388,7 @@ table {
 
 // Blog pagination
 .button.button--previous {
-	padding-left: 5em;
+	padding-left: 3em;
 	padding-right: 1.4em;
 	&:before {
 		right: auto;

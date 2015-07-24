@@ -49,7 +49,7 @@ hr {
 
 // Wrapping container
 .container,
-.feature__content-wrap {
+.feature__content-inner-wrap {
 	width: 85%;
 	margin: 0 auto;
 	padding: 20px 0;
@@ -163,7 +163,13 @@ textarea {
 .feature__background-image {
 	background-size: 100% auto;
 	background-size: cover;
-	padding: 6em 0;
+	padding: 16em 0 0;
+}
+
+.feature__content-wrap {
+	text-shadow: 0 0 60px rgba(0,0,0,0.5); // Hard coded transparent black so text is easier to read on all backgrounds
+	padding: 0;
+	background: darken(fadeout(@color-swatch3, 60%), 10%);
 }
 
 .widget__feature {
