@@ -1,9 +1,9 @@
 {
-    "name": "Sullivan",
-    "thumbnail": "sullivan.png",
-    "screenshot": "sullivan-screenshot.png",
+    "name": "Rhone",
+    "thumbnail": "rhone.png",
+    "screenshot": "rhone-screenshot.png",
     "widgetVersion":2,
-    "templateType":"standard",
+    "templateType":"luxury",
     "tags": {
         "en": [
             "business", "corporate", "company", "corporation", "professional"
