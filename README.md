@@ -1,2 +1,2 @@
-# Sullivan
-A standard BaseKit template.
+# Rhône
+A luxury BaseKit template.
