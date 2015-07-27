@@ -64,7 +64,7 @@ blockquote {
 	font-size: 1.4em;
 	padding: 1em;
 	margin: .2em 0;
-	background-color: lighten(@color-swatch1, 5%);
+	background-color: darken(@color-swatch1, 5%);
 	&:before {
 		font-size: 3rem;
 		vertical-align: middle;
@@ -354,4 +354,10 @@ textarea {
 	width: 100%;
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
+}
+
+
+// Messages
+.message:before {
+	line-height: inherit;
 }
