@@ -83,7 +83,11 @@ textarea {
 
 // Header
 .template-header {
-	background-color: @color-swatch7;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
 	.container {
 		padding: 0;
 	}
@@ -163,7 +167,7 @@ textarea {
 .feature__background-image {
 	background-size: 100% auto;
 	background-size: cover;
-	padding: 16em 0 0;
+	padding: 30em 0 0;
 }
 
 .feature__content-wrap {
@@ -310,7 +314,6 @@ textarea {
 	display: inline-block;
 	background-color: lighten(@color-swatch1, 5%);
 	transition: .2s;
-	font-size: 0;
 	&:hover {
 		background-color: lighten(@color-swatch1, 10%);
 	}
@@ -318,8 +321,6 @@ textarea {
 
 .gallery .caption,
 .responsiveslideshow .caption {
-	background-color: transparent;
-	.gradient(fadeout(@color-swatch5, 100%), fadeout(@color-swatch5, 0%));
 	max-height: 100%;
 }
 

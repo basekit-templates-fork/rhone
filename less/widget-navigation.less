@@ -16,6 +16,7 @@
 // Clears margin on ul, hides navigatio on mobile (made visible in conjunction with navigation-toggle)
 .navigation-list {
 	margin: 0;
+	left: auto;
 	@media @tablet {
 		display: none;
 		&.open {
@@ -25,7 +26,6 @@
 }
 
 // Sets background colour to navigation and dropdowns
-.extendednavigation,
 .navigation-list--children {
 	background-color: @font-swatch6-background-color;
 }

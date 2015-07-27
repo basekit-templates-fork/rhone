@@ -16,10 +16,8 @@
         ]
     },
     "images": [
-        "images/feature.png",
-        "images/logo.png",
-        "images/logodark.png",
-        "images/sidebar.jpg"
+        "images/feature.jpg",
+        "images/logo.png"
     ],
     "pageTypes": [
         "home"
