@@ -38,7 +38,10 @@
 
 .navigation-list--children {
 	min-width: 180px;
-	padding: 14px;
+	padding: 14px 0;
+	@media @tablet {
+		padding: 0;
+	}
 }
 
 // Sets nav items to full width on mobile and tablet
@@ -48,21 +51,34 @@
 	&.selected .item-name {
 		border-bottom: 1px solid @color-swatch2;
 	}
-	@media @tablet {
-		display: block;
-	}
 	.item-name {
 		padding: 0;
 		margin: 14px 0 14px 24px;
 		display: inline;
+	}
+	@media @tablet {
+		display: block;
+		.item-name {
+			padding: 10px 14px;
+			margin: 0;
+			display: inline-block;
+		}
+		.item-name:hover,
+		&.selected .item-name {
+			border: none;
+			color: @color-swatch2;
+		}
 	}
 }
 
 // Allow sub items to wrap
 .navigation-item--child {
 	white-space: normal;
-	padding: 0 0 10px;
+	padding-bottom: 10px;
 	&:last-of-type {
+		padding-bottom: 0;
+	}
+	@media @tablet {
 		padding-bottom: 0;
 	}
 }

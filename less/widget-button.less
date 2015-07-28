@@ -348,6 +348,7 @@ table {
 	background: none;
 	color: @color-swatch2;
 	padding: 0 1.5em 0 0;
+	border: none;
 	&:before {
 		padding: 0;
 		font-size: 1em;
@@ -357,8 +358,13 @@ table {
 
 
 // Nav button
-.navigation-toggle {
-	padding-right: 1.4em;
+.navigation-toggle,
+.navigation-toggle:hover {
+	padding-right: 14px;
+	float: right;
+	z-index: 9000;
+	background-color: transparent;
+	border: none;
 }
 
 

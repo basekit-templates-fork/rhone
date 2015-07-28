@@ -8,9 +8,9 @@
 .responsiveslideshow {
 	position: relative;
 	.button {
-		background-color: fadeout(darken(@color-swatch5, 30%), 30%);
+		background-color: darken(fadeout(@color-swatch3, 60%), 10%)
 		&:hover {
-			background-color: fadeout(darken(@color-swatch5, 50%), 10%);
+			background-color: fadeout(darken(@color-swatch3, 70%), 10%);
 		}
 	}
 	.image-title,
@@ -37,6 +37,9 @@
 		.caption {
 			display: none;
 		}
+	}
+	.caption {
+		background-color: darken(fadeout(@color-swatch3, 60%), 10%);
 	}
 }
 

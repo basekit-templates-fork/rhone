@@ -105,6 +105,12 @@ textarea {
 #page-zones__template-widgets__feature-headerfeature ~ .template-header {
 	position: absolute;
 	background-color: transparent;
+	.navigation-list--children {
+		background-color: transparent;
+		@media @tablet {
+			background-color: @font-swatch6-background-color;
+		}
+	}
 }
 
 .container--flexbox {
@@ -337,13 +343,13 @@ textarea {
 // Yelp widget
 .review-list,
 .yelp-title {
-	background-color: lighten(@color-swatch1, 5%);
+	background-color: darken(@color-swatch1, 5%);
 	padding: 18px 20px 20px;
 }
 
 .review-list {
 	list-style: none;
-	background-color: lighten(@color-swatch1, 3%);
+	background-color: darken(@color-swatch1, 3%);
 	margin: 0;
 }
 
