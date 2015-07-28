@@ -38,23 +38,33 @@
 
 .navigation-list--children {
 	min-width: 180px;
+	padding: 14px;
 }
 
 // Sets nav items to full width on mobile and tablet
 .navigation-item {
 	cursor: pointer;
-	&:hover,
-	&.selected {
-		background-color: @font-swatch6-background-color-hover;
+	.item-name:hover,
+	&.selected .item-name {
+		border-bottom: 1px solid @color-swatch2;
 	}
 	@media @tablet {
 		display: block;
+	}
+	.item-name {
+		padding: 0;
+		margin: 14px 0 14px 24px;
+		display: inline;
 	}
 }
 
 // Allow sub items to wrap
 .navigation-item--child {
 	white-space: normal;
+	padding: 0 0 10px;
+	&:last-of-type {
+		padding-bottom: 0;
+	}
 }
 
 // Dropdown parent arrow
