@@ -114,7 +114,7 @@
         },
         "font6": {
             "font-family": "\"Open Sans Condensed\", Arial, Helvetica, sans-serif",
-            "font-size": "12px",
+            "font-size": "13px",
             "font-weight": "400",
             "line-height": "20px",
             "color": "@color-swatch6",

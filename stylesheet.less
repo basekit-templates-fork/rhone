@@ -83,11 +83,11 @@ textarea {
 
 // Header
 .template-header {
-	position: absolute;
+	background-color: @color-swatch7;
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 1;
+	z-index: 9000;
 	.container {
 		padding: 0;
 	}
@@ -100,6 +100,11 @@ textarea {
 		height: 1px;
 		vertical-align: top;
 	}
+}
+
+#page-zones__template-widgets__feature-headerfeature ~ .template-header {
+	position: absolute;
+	background-color: transparent;
 }
 
 .container--flexbox {
