@@ -37,6 +37,28 @@
 
 		<div class="container  container--main">
 
+			{{widget('gallery', 'imagegallery', {
+				'showTitle': true,
+				'showDescription': true,
+				'images':[
+					{
+						'url': asset('/images/photo-1.jpg'),
+						'title':'Lorem Ipsum',
+						'description': 'Consectetur adipiscing elit. Etiam libero nibh'
+					},
+					{
+						'url': asset('/images/photo-2.jpg'),
+						'title':'Lorem Ipsum',
+						'description': 'Consectetur adipiscing elit. Etiam libero nibh'
+					},
+					{
+						'url': asset('/images/photo-3.jpg'),
+						'title':'Lorem Ipsum',
+						'description': 'Consectetur adipiscing elit. Etiam libero nibh'
+					}
+				]
+			})|raw}}
+
 			{{zone('main')|raw}}
 
 		</div>
@@ -48,14 +70,14 @@
 
 		<div class="container">
 
-			<div class="profile-content  left">
+			<div class="profile-content	left">
 				{{widget('profile', 'footerprofile1', {
 					"profileType":"copyright",
 					"copyright":"profile"
 				})|raw}}
 			</div>
 
-			<div class="profile-content  right">
+			<div class="profile-content	right">
 				{{widget('profile', 'footerprofile2', {
 					"profileType":"socialicons",
 					"socialicons":"profile"
