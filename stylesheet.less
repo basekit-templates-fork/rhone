@@ -169,8 +169,12 @@ textarea {
 }
 
 .company-link {
-	padding-left: 0;
+	padding-left:0 ;
 	display: inline-block;
+}
+
+[data-widget-type="logo"] + [data-widget-type="companyname"] {
+	padding-left: 0.75em;
 }
 
 
@@ -281,6 +285,10 @@ textarea {
 		-webkit-align-items: center;
 		-ms-flex-align: center;
 		align-items: center;
+
+		@media @mobile {
+			display: block;
+		}
 	}
 	p {
 		padding-bottom: 0;
@@ -304,6 +312,10 @@ textarea {
 	}
 	&.right {
 		text-align: right;
+
+		@media @mobile {
+			text-align: center;
+		}
 	}
 }
 
