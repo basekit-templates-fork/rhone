@@ -117,9 +117,9 @@
         },
         "font6": {
             "font-family": "\"Open Sans Condensed\", Arial, Helvetica, sans-serif",
-            "font-size": "14px",
+            "font-size": "18px",
             "font-weight": "400",
-            "line-height": "20px",
+            "line-height": "24px",
             "color": "@color-swatch6",
             "color-hover": "@color-swatch6",
             "letter-spacing": "inherit",

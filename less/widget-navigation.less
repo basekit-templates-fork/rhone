@@ -48,7 +48,8 @@
 .navigation-item {
 	cursor: pointer;
 	.item-name:hover,
-	&.selected .item-name {
+	&.selected span.item-name,
+	&.folder .selected a.item-name {
 		border-bottom: 1px solid @color-swatch2;
 	}
 	.item-name {
